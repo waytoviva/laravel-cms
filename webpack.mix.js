@@ -29,7 +29,7 @@ mix.js('resources/assets/js/app.js', 'public/js');
 // npm run production 的时候进行版本化：
 if (mix.config.inProduction) {
     //字体
-    mix.copy('resources/assets/fonts/', 'public/fonts/');
+    //mix.copy('resources/assets/fonts/', 'public/fonts/');
     //版本
     mix.version();
 }
