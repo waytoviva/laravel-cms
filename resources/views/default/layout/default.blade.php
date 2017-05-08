@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="baidu-site-verification" content="{{ cache()->get('setting.baidu-site-verification') }}" />
     <title>{{ cache()->get('setting.site_name') }}  - @section('title')@show</title>
     @include('common.header')
 </head>
