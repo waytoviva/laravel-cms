@@ -1,0 +1,246 @@
+/*
+**	CSS Browser Reset
+** 	Copyright (c) 2010, Yahoo! Inc. All rights reserved.
+**	Code licensed under the BSD License:
+**	http://developer.yahoo.com/yui/license.html
+**	version: 3.3.0
+**	build: 3167
+*/
+
+html{color:#000;background:#FFF}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0;outline:none}
+table{border-collapse:collapse;border-spacing:0}
+fieldset,img{border:0}
+address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}
+li{list-style:none}
+caption,th{text-align:left}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}
+q:before,q:after{content:''}
+abbr,acronym{border:0;font-variant:normal}
+sup{vertical-align:text-top}
+sub{vertical-align:text-bottom}
+input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit}
+input,textarea,select{*font-size:100%}
+legend{color:#000}
+
+/*
+** General Styles
+*/
+
+.left {text-align: left !important}
+.center {text-align: center !important}
+.right {text-align: right !important}
+
+.super {font-size: 0.625em; vertical-align: top}
+.sub {font-size: 0.625em; vertical-align: bottom}
+
+strong {font-weight: bold}
+em {font-style: italic}
+
+body {width: 980px}
+
+/*
+** Header Styles
+*/
+
+#header {
+    position: relative;
+    clear: both;
+    font-size: 4em;
+}
+
+#header h1 {
+    position: relative;
+    clear: both;
+    width: 7em;
+    font-family: Verdana, sans-serif;
+    color: #A14947;
+    text-align: center;
+    margin: 36px 0 48px 285px;
+    text-shadow: #999 2px 2px 2px;
+    z-index: 1000;
+}
+
+#header img {
+    position: absolute;
+    top: -0.25em;
+}
+
+#header img#shadow {
+    left: 280px;
+    top: 0;
+    z-index: 900;
+}
+
+#header img.left {left: 0.25em}
+#header img.right {right: 0.25em}
+
+/*
+** Body Styles
+*/
+
+#body {font-family: Verdana, Arial, sans-serif}
+
+#body #nav {
+    position: absolute;
+    top: 165px;
+    left: 0;
+    width: 200px;
+    padding-bottom: 3em;
+    margin-right: 2em;
+}
+
+#body #nav li {
+    list-style: none outside;
+    margin: 0 0 1em 2em;
+}
+
+#body #nav a {
+    font-family: Verdana, sans-serif;
+    color: #919191;
+    font-size: 1.5em;
+    font-style: italic;
+    text-shadow: #BBB 1px 1px 1px;
+    text-decoration: none;
+}
+
+#body #nav li.active a,
+#body #nav li a:hover {
+    color: #C61E1E;
+}
+
+#body #nav img {margin: 2em 0 0 2em}
+
+#body #content {min-width: 700px; margin-left: 250px; padding-right: 2em}
+#body #content a {color: #C61E1E; text-decoration: underline}
+#body #content p {text-align: justify; margin-bottom: 1.25em}
+#body #content ul {margin-bottom: 1.25em}
+#body #content ul li {list-style: outside circle; padding-left: 0.5em; margin: 0 0 0.5em 3em}
+
+#body #content h2 {
+    font-size: 1.5em;
+    color: #558ED5;
+    margin: 0 0 1em 0;
+    border-bottom: 2px dotted #558ED5;
+}
+
+#body #content h3 {
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+#body #content h3.news {
+    font-size: 1.125em;
+    font-weight: normal;
+    color: #666;
+    text-shadow: #BBB 1px 1px 1px;
+}
+
+#body #content ul.news li {
+    list-style: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#body #content .person {clear: both; margin-bottom: 2.5em}
+
+#body #content .person img,
+#body #content .contact img {
+    float: left;
+    margin: 0 1em 2em 0;
+}
+
+#body #content .person h3 {
+    line-height: 1.0625em;
+    margin-bottom: 0;
+}
+
+#body #content .person h4 {
+    color: #777777;
+    margin-bottom: 1em;
+    font-size: 1em;
+    font-weight: normal;
+    font-style: italic;
+}
+
+#body #content .person p {
+    margin-bottom: 1em;
+}
+
+#body #content .person ul {margin-bottom: 1em}
+
+#body #content .person li {
+    list-style: inside circle;
+    font-size: 0.75em;
+    margin-bottom: 0;
+}
+
+#body #content .person li li {
+    list-style: inside square;
+}
+
+#body #content .photo {
+    text-align: center;
+    border: 1px solid #CCC;
+    padding-top: 1em;
+    margin-bottom: 2em;
+}
+#body #content .photo div {color: #666; margin: 1em}
+
+
+#body #main_pubs li {
+    list-style: outside decimal;
+    margin: 0 0 1.75em 1.25em;
+    padding-left: 1em;
+    text-align: center;
+}
+
+#body #main_pubs li div, #body #main_pubs li p {text-align: center;}
+
+#body #main_pubs li .title, #body #main_pubs li .year {font-weight: bold}
+#body #main_pubs li .journal {font-style: italic}
+#body #main_pubs li img {margin: 1em 0}
+
+#body #content ul.other_pubs li {
+    list-style: none;
+    margin: 0 0 1.75em 0;
+    padding: 0;
+}
+
+#body #content ul.other_pubs li ul {margin: 1em 0}
+#body #content ul.other_pubs li ul li {font-size: 0.875em; margin: 0 0 0 2em}
+
+#body #content ul.other_pubs li .year {font-weight: bold}
+#body #content ul.other_pubs li .journal {font-style: italic}
+
+#body #content ul#news li {
+    list-style: none;
+    margin: 0 0 2em 0;
+    padding-left: 0;
+}
+
+#body #content ul#news li img {
+    float: left;
+    margin: 0 1em 0.5em 0;
+}
+
+#body #content ul#news li h4 {font-weight: bold; margin-bottom: 0.5em}
+
+#body #content ul.links li {margin-bottom: 0.25em}
+
+/*
+** Footer Styles
+*/
+
+#footer {
+    clear: both;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 0.75em;
+    color: #7F7F7F;
+    text-align: center;
+    padding: 3em 0;
+    margin-left: 250px;
+}
+#footer p {line-height: 1.5em;}
+#footer a {color: #7F7F7F}

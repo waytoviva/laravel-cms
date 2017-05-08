@@ -7,11 +7,16 @@
     @include('common.header')
 </head>
 <body>
-@include('common.nav')
-@section('content')
-@show
+@include('common.top')
+<div id="body">
+        @include('common.nav')
+        <div id="content">
+        @section('content')
+        @show
+        </div>
+</div>
 @section('footer')
-@include('common.footer')
+    @include('common.footer')
 @show
 </body>
 </html>

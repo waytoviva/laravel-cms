@@ -1,2 +1,0 @@
-# laravel-cms
-init
