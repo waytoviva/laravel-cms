@@ -1,4 +1,5 @@
 <div id="footer">
+    @include('common.baidusearch')
     <p>
     友情链接:
     @if($cache = cache()->get('links'))
