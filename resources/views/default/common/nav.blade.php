@@ -7,4 +7,5 @@
             @endforeach
         @endif
     </ul>
+    @include('common.baidusearch')
 </div>

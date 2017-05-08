@@ -15,10 +15,6 @@
     {{ cache()->get('setting.site_copyright') }} {{ cache()->get('setting.company_name') }}
     版权所有 {{ cache()->get('setting.miitbeian') }}
     </p>
-    <div style="text-align: center">
-        @include('common.baidusearch')
-    </div>
-
 </div>
 
 
