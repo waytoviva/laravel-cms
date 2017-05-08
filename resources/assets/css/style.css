@@ -111,6 +111,8 @@ body {width: 980px}
 
 #body #nav img {margin: 2em 0 0 2em}
 
+#body #nav .baidusearch {margin: 2em 0 0 2em}
+
 #body #content {min-width: 700px; margin-left: 250px; padding-right: 2em}
 #body #content a {color: #C61E1E; text-decoration: underline}
 #body #content p {text-align: justify; margin-bottom: 1.25em}
