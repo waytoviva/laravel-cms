@@ -7,7 +7,7 @@
             @endforeach
         @endif
     </ul>
-    <div class="baidusearch">123
+    <div class="baidusearch">
         @include('common.baidusearch')
     </div>
 </div>
