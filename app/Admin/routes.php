@@ -14,9 +14,12 @@ Route::group([
 
     $router->resource('posts', PostController::class);
     $router->resource('pages', PageController::class);
+    $router->resource('tags', TagController::class);
+    $router->resource('category', CategoryController::class);
 
     $router->resource('images', ImageController::class);
     $router->resource('api/images', Api\ImageController::class);
+    $router->resource('api/category', Api\CategoryController::class);
 
 
 

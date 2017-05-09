@@ -9,6 +9,8 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use App\Http\Controllers\Controller;
 use Encore\Admin\Controllers\ModelForm;
+use App\Models\Tag;
+use App\Models\Category;
 
 class PostController extends Controller
 {
@@ -122,7 +124,17 @@ class PostController extends Controller
 
             $form->text('post_title', '标题')->rules('required|min:1');
 
-            $form->select('post_tag', '文章所属分类')->options(['company'=>'公司新闻', 'industry'=>'行业新闻', 'top'=>'头条新闻']);
+            // load options by ajax
+            /*$form->select('category_id', '分类')->options(function ($id) {
+                $category = Category::find($id);
+
+                if ($category) {
+                    return [$category->id => $category->name];
+                }
+            })->ajax('/admin/api/category');*/
+
+            $form->select('category_id', '分类')->options(Tag::all()->pluck('name', 'id'));
+            $form->multipleSelect('tags', '标签')->options(Tag::all()->pluck('name', 'id'));
 
             $form->hidden('post_type')->default('post');
 
@@ -178,4 +190,7 @@ class PostController extends Controller
             $post->save();
         }
     }
+
+
+
 }

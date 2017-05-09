@@ -47,17 +47,9 @@ class Post extends Model
         return json_decode($logo, true);
     }
 
-
-
-
-    /**
-     * Many to many relation.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\BelongsToMany
-     */
     public function tags()
     {
-        return $this->belongsToMany('App\Models\Tag', 'post_tag', 'post_id');
+        return $this->morphToMany('App\Models\Tag', 'taggable', 'taggables');
     }
 
     /**
