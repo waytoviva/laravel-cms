@@ -24,6 +24,8 @@ Route::name('cms.product.show.getdata')->post('/productshow/getdata', 'ProductCo
 
 Route::name('cms.post.index')->get('/news', 'PostController@index');
 Route::name('cms.post.show')->get('/newsshow/{id}', 'PostController@show');
+Route::name('cms.category.show')->get('/category/{id}', 'CategoryController@show');
+
 
 Route::name('cms.help.index')->get('/help', 'HelpController@index');
 Route::name('cms.help.show')->get('/help/{id}', 'HelpController@show');

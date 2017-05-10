@@ -20,7 +20,7 @@ class Category extends Model
      *
      * @var array
      */
-    protected $fillable = ['id', 'parent_id', 'cat_name', 'keywords', 'description', 'cat_ico', 'order', 'is_show'];
+    protected $fillable = ['id', 'name'];
 
     /**
      * The attributes should be hidden for arrays.
@@ -28,12 +28,4 @@ class Category extends Model
      * @var array
      */
     protected $hidden = [''];
-
-    protected $casts = [
-    ];
-
-    public function product()
-    {
-        return $this->belongsTo('App\Models\Product', 'cat_id');
-    }
 }

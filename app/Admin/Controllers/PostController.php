@@ -133,7 +133,7 @@ class PostController extends Controller
                 }
             })->ajax('/admin/api/category');*/
 
-            $form->select('category_id', '分类')->options(Tag::all()->pluck('name', 'id'));
+            $form->select('category_id', '分类')->options(Category::all()->pluck('name', 'id'));
             $form->multipleSelect('tags', '标签')->options(Tag::all()->pluck('name', 'id'));
 
             $form->hidden('post_type')->default('post');
