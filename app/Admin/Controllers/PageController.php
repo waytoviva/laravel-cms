@@ -115,7 +115,7 @@ class PageController extends Controller
 
             $form->text('post_title', '标题')->rules('required|min:1');
 
-            $form->text('post_tag', '所属分类')->rules('required');
+            $form->text('post_tag', '页面标示')->rules('required');
 
             $form->editor('post_content', '内容')->default('');
 

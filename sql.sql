@@ -55,6 +55,7 @@ DROP TABLE IF EXISTS `posts`;
 CREATE TABLE `posts` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `category_id` int(10) NOT NULL DEFAULT '0',
+  `post_tag` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '',
   `post_author` bigint(20) unsigned NOT NULL DEFAULT '0',
   `post_content` longtext COLLATE utf8mb4_unicode_ci NOT NULL,
   `post_title` text COLLATE utf8mb4_unicode_ci NOT NULL,
