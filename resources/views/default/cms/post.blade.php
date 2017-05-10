@@ -21,7 +21,7 @@
         {!! $post->post_content !!}
     </div>
 
-    <p class="news-page">
+    <div>
 
         @if ($previous != '')
             <a href="{{ route('cms.post.show', ['id'=>$previous]) }}">&lt;&lt; 上一篇</a>
@@ -32,6 +32,6 @@
         @if ($next != '')
             <a href="{{ route('cms.post.show', ['id'=>$next]) }}">下一篇 &gt;&gt;</a>
         @endif
-    </p>
+    </div>
 
 @stop

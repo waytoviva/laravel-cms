@@ -16,6 +16,12 @@ class PostController extends Controller
     {
         $post = Post::where(['post_type' => 'post', 'released' => 1])->find((int)$id);
 
+        if (empty($post)) {
+            abort(404);
+        }
+
+
+
         //previous
         $previous = Post::where(['post_type' => 'post', 'released'=>1])
             ->where('id', '>', $id)
